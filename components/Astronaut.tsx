@@ -5,7 +5,7 @@ import { Group } from "three";
 
 export default function Astronaut() {
   const group = useRef<Group>(null);
-  const { scene } = useGLTF("/models/Astronaut.glb");
+  const { scene } = useGLTF("/models/astronaut_animated.glb");
 
   useFrame((state) => {
     if (group.current) {
