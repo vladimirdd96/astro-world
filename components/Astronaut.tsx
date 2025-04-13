@@ -9,7 +9,7 @@ export default function Astronaut() {
   const { scene } = useGLTF("/models/astronaut_animated.glb");
 
   // State for target rotation and scale
-  const [targetYRotation, setTargetYRotation] = useState(0);
+  const [targetYRotation, setTargetYRotation] = useState(Math.PI / 2 + Math.PI); // Rotate 180 degrees to show face
   const [targetScale, setTargetScale] = useState(0.5); // Target scale
   const [smoothScale, setSmoothScale] = useState(0.5); // Interpolated scale for smoothness
 
